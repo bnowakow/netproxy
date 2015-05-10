@@ -4,7 +4,7 @@ RUN apt-get update -qq && apt-get install -y software-properties-common
 RUN add-apt-repository -y ppa:vbernat/haproxy-1.5
 RUN apt-get update -qq && apt-get install -y haproxy dnsmasq iptables git php5-cli supervisor
 
-RUN git clone https://github.com/trick77/tunlr-style-dns-unblocking.git tunlr
+RUN git clone https://github.com/bnowakow/tunlr-style-dns-unblocking.git tunlr
 
 WORKDIR /tunlr/
 
